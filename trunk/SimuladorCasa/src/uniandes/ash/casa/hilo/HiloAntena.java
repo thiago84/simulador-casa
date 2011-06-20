@@ -26,7 +26,7 @@ public class HiloAntena extends Thread {
     public void run() {
         try {
             while (true) {
-                ArrayList listaMensajes = new ArrayList();
+                ArrayList<String> listaMensajes = new ArrayList();
                 Mensajes mensaje = new Mensajes();
                 for (int i = 0; i < 13; i++) {
                     listaMensajes.add(mensaje.generarMensaje());
